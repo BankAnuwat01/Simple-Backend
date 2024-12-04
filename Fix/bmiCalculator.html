@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background: linear-gradient(135deg, #74b9ff, #81ecec);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           color: #2d3436;
+       }
+       .calculator-container {
+           background: #ffffff;
+           border-radius: 15px;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+           padding: 30px;
+           text-align: center;
+           width: 300px;
+       }
+       h1 {
+           font-size: 24px;
+           margin-bottom: 20px;
+           color: #0984e3;
+       }
+       input[type="text"] {
+           width: 100%;
+           padding: 10px;
+           margin: 10px 0;
+           border: 1px solid #dcdde1;
+           border-radius: 5px;
+           font-size: 16px;
+       }
+       button {
+           background: #00cec9;
+           border: none;
+           padding: 10px 20px;
+           border-radius: 5px;
+           font-size: 16px;
+           color: #ffffff;
+           cursor: pointer;
+           transition: background 0.3s;
+       }
+       button:hover {
+           background: #00b894;
+       }
+   </style>
+</head>
+<body>
+   <div class="calculator-container">
+       <h1>BMI Calculator</h1>
+       <form action="/bmiCalculator" method="post">
+           <input type="text" name="height" placeholder="Enter the heigth">
+           <input type="text" name="weight" placeholder="Enter the weigth">
+           <button type="submit" name="submit">Calculate</button>
+       </form>
+   </div>
+</body>
+</html>
