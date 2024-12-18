@@ -15,5 +15,5 @@ app.get('/kanye', async (req, res) => {
  }); 
 
 app.listen(3000, () => {
-    console.log("เซิฟเปิดแล้ว on port 30000ไอ้เหี้ย")
+    console.log("เซิฟเปิดแล้ว on port 3000ไอ้เหี้ย")
 })
